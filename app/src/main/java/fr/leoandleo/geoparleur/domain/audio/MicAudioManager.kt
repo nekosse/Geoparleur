@@ -75,6 +75,9 @@ class MicAudioManager(ctx: Context) {
         }
 
     // start recording
+    fun isStart():Boolean{
+        return !stopped
+    }
     fun start() {
         stopped = false
         recorder.startRecording()
